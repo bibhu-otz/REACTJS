@@ -1,0 +1,384 @@
+<html>
+
+<head>
+    <!--Font linking-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <!---======-->
+    <!-- icon stylesheet from bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- css stylesheet linking for webpage styling
+    <link rel="stylesheet" href="music.css">-->
+    <style>
+        body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+div.landing nav{
+    background-color: rgb(39, 38, 38);
+    width: 100%;
+    position: fixed;
+    opacity: 0.9;
+    height: 6%;
+    padding-bottom: 0.5em; 
+}
+div.landing ul{
+    padding: 0%;
+    margin:0%;
+}
+div.landing nav li{
+    display: inline;
+    padding: 0.2em;
+    float: left;
+}
+div.landing nav li:hover{
+    background-color: rgb(67, 66, 66);
+    height: 100%;
+}
+div.landing nav a{
+    text-decoration: none;
+    display: inline-block;
+    color: aliceblue;
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+}
+div.block1{
+    text-align:center;
+    width: 100%;
+    height: 100%;
+    display:block;
+    color: white;
+    font-size: 25px;
+    background-image: url(https://wallpapercave.com/wp/wp2327017.jpg);
+    background-position: center;
+}
+div.blockin{ 
+    padding: 200px 150px;
+}
+/* styling for music section showcase */
+section.music{
+    text-align:center;
+    width: 100%;
+    height: 120%;
+    display:block;
+    color: rgb(3, 3, 3);
+    font-size: 20px;
+    padding: 50px 0px;
+    background-color: rgb(252, 249, 249);
+}
+section.music div{
+    padding: 0px 200px;
+}
+section.music h1{
+    font-size: xx-large;
+}
+section.music img{
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+}
+section.music a{
+    text-decoration: none;
+    color: rgb(248, 246, 246);
+    padding: 20px 40px;
+    background-color: rgb(214, 75, 78);
+    border-radius: 5px;
+}
+section.music a:hover{
+    background-color: rgb(245, 133, 133);
+}
+section.music p{
+    padding: 20px;
+}
+/* styling for video section showcase */
+section.video{
+    text-align:center;
+    width: 100%;
+    height: 120%;
+    display:block;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    padding: 50px 0px;
+    background-color: rgb(187, 186, 186);
+}
+section.video img{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 40px;
+}
+section.video p{
+    padding: 10px 50px;
+}
+section.video a{
+    text-decoration: none;
+    color: rgb(248, 246, 246);
+    padding: 20px 40px;
+    background-color: rgb(49, 191, 216);
+    border-radius: 10px;
+}
+section.video a:hover{
+    background-color: rgb(116, 228, 232);
+}
+
+/* styling for entertainment section showcase */
+section.entertain{
+    text-align:center;
+    width: 100%;
+    height: 90%;
+    display:block;
+    color: white;
+    font-size: larger;
+    padding: 50px 0px;
+    background-color: rgb(128, 117, 117);
+    background-image: url(https://tinyurl.com/conceirto);
+    background-position: center;
+    background-size: cover;
+}
+section.entertain div{
+    padding: 150px 80px ;
+    font-size: larger;
+}
+/* styling for giftcard section showcase */
+section.giftcard{
+    text-align:left;
+    width: 100%;
+    height: 80%;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    display: block;
+    padding: 50px 0px 10px 0px;
+    background-color: rgb(255, 254, 254);
+}
+section.giftcard .gfs{
+    display:grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items:center;
+    gap: 1em;
+}
+/*section.giftcard .item1{
+  width:
+}*/
+section.giftcard img{
+    width: 22em;
+}
+section.giftcard p{
+    text-align: justify;
+    padding: 0px 20px 0px 0px;
+}
+section.giftcard span{
+    font-size: small;
+}
+section.giftcard a{
+    text-decoration: none;
+    color: brown;
+}
+section.giftcard a:hover{
+    color:rgb(255, 116, 146)
+}
+/* styling for footer section showcase */
+footer{
+    width: 100%;
+    height: 50%;
+    color: white;
+    font-size: larger;
+    background-color: rgb(58, 56, 56);
+    position:relative;
+    bottom:0;
+}
+footer .footbot{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding:1em;
+}
+footer ul{
+    list-style: none;
+    text-align: left;
+    font-size: medium;
+}
+footer .footend{
+    text-align:center;
+    background-color: rgb(16, 15, 15);
+    width:100%;
+    padding:0.2em 0;
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+  
+  
+    </style>
+</head>
+
+<body>
+    <!--navigation and opening page-->
+    <div>
+        <div class="landing" id="land">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#land">myTune</a>
+                    </li>
+                    <li>
+                        <a href="#head">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#mus">Music</a>
+                    </li>
+                    <li>
+                        <a href="#vid">Video</a>
+                    </li>
+                    <li>
+                        <a href="#gf">Giftcard</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--main header block-->
+            <div class=block1 id="head">
+                <div class="blockin">
+                    <h1>myTune</h1>
+                    <h3>One place to showcase your music, video and TV shows</h3>
+                    <p>Mytune is the best place to organize and arrange the music/videos you own and also, buy the
+                        music/videos/TV shows you like to add to your playlist.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Section for music playlist -->
+        <section class="music" id="mus">
+            <div>
+                <h1><i class="bi bi-music-note-list"></i> Music</h1>
+                <h3>All your favourite music in a single place.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, assumenda? Tempore numquam harum
+                    non
+                    laborum, deserunt temporibus modi necessitatibus obcaecati. Veritatis quae itaque provident impedit
+                    cum,
+                    fugiat vero tempora voluptas.
+                </p>
+                <hr>
+                <br>
+                <a href="#">Take a Trail</a>
+                <p>
+                    myTune is available for iOS Android and Windows.
+                </p>
+                <img src="https://cdn.mobilesyrup.com/wp-content/uploads/2012/12/sonos-1.jpg" alt="crossplatform">
+            </div>
+        </section>
+        <!-- Section for video playlist -->
+        <section class="video" id="vid">
+            <div>
+                <h1><i class="bi bi-camera-video-fill"></i> Videos</h1>
+                <h3>All your videos and TV shows beautifully arranged for you.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id, nostrum laborum, eaque
+                    obcaecati
+                    pariatur vel assumenda dolorem repudiandae blanditiis beatae aspernatur harum esse ea ut provident
+                    laboriosam amet sed nemo ullam maiores, incidunt natus nulla! Eius deserunt voluptate assumenda
+                    aperiam
+                    consequatur. Cupiditate repellat earum omnis quis numquam quae expedita aliquam voluptatem totam
+                    facilis
+                    magnam, consequuntur odit nam voluptas rem. Sit, eos molestias quia inventore harum magnam neque!
+                    Consequatur, ad.
+                </p>
+                <br>
+                <a href="#">Read More</a>
+                <br>
+                <img src="https://cdn.pixabay.com/photo/2021/02/10/13/35/video-streaming-6002102_960_720.jpg"
+                    alt="stream">
+            </div>
+        </section>
+        <!-- Section for entertainment playlist -->
+        <section class="entertain">
+            <div>
+                <h3>All Your Entertainment Available Anywhere You Go.. | Misc Playlist</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptate ad numquam minus nesciunt
+                    deserunt qui eum assumenda sapiente aspernatur similique repudiandae unde sequi iste, placeat, ex
+                    hic,
+                    excepturi ipsam omnis adipisci necessitatibus. Est laborum omnis, nostrum, error alias veritatis eos
+                    in
+                    perspiciatis debitis tempora quibusdam quae ab? Expedita, quidem, impedit sit distinctio
+                    necessitatibus
+                    similique voluptatem numquam ad sed ab ipsum, voluptatibus accusantium molestiae reiciendis cumque
+                    dicta
+                    autem aliquid sint. Velit omnis atque ullam dolores animi quod aliquam. Minima, quia?
+                </p>
+            </div>
+        </section>
+        <section class="giftcard" id="gf">
+            <div class="gfs">
+                <div class="item1">
+                    <img src="https://vni.s3.amazonaws.com/131126225507727.png" alt="">
+                </div>
+                <div class="item2">
+                    <h2>Gift Cards</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sequi excepturi tempore error
+                        vero unde, velit tenetur at voluptatem dolores impedit quia a illo praesentium odio eligendi,
+                        saepe distinctio provident.
+                        Debitis molestias ex aspernatur officiis blanditiis nisi, itaque dolorum suscipit accusantium ab
+                        corrupti libero minus adipisci voluptatum assumenda culpa cum, voluptate eum necessitatibus
+                        earum explicabo. Rem esse cum dignissimos ab!
+                        Minima molestias hic explicabo aperiam molestiae ex! Voluptate quod nihil hic quam, delectus
+                        architecto, quasi nostrum ducimus magni quis modi eos neque ad libero nisi dignissimos nemo
+                        harum quidem incidunt!
+                    </p>
+                    <p>
+                        <span>Already have a prime myTune card?</span>
+                    </p>
+                    <hr>
+                    <i class="bi bi-arrow-right-square-fill"></i>
+                    <a href="">Redeem</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footbot">
+                    <ul class="list-1">
+                        <li><strong>Shop & Learn</strong><hr></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Shows</a></li>
+                        <li><a href="#">Apps</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                    <ul class="list-2">
+                        <li><strong>myTune Store</strong><hr></li>
+                        <li><a href="#">Find Store</a></li>
+                        <li><a href="#">Latest Happenings</a></li>
+                        <li><a href="#">myTune Store Camp</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                    <ul class="list-3">
+                        <li><strong>Business & Training</strong><hr></li>
+                        <li><a href="#">myTune Business</a></li>
+                        <li><a href="#">Shop For College</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Franchise</a></li>
+                        <li><a href="#">Job Openings</a></li>
+                    </ul>
+                    <ul class="list-4">
+                        <li><strong>About myTune</strong><hr></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+            <div class="footend">
+                <p>
+                Copyright &copy Codienza Challengers For Skill Academy
+                </p>
+            </div>
+        </footer>
+</body>
+
+</html>
